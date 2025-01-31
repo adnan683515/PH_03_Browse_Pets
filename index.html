@@ -7,24 +7,123 @@
     <title>CAT</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        yllow: "#FFDC26",
+                        nav_yellow: "#FFF9F4",
+                        pera_colour: "#111111",
+                        secondary: "#FFF9F4",
+                        card: "#F9DF8A"
                     }
                 }
             }
         }
     </script>
+
+    <style>
+        .adlam {
+
+            font-family: "ADLaM Display", serif;
+        }
+
+        .sora {
+            font-family: "Noto Sans Display", serif;
+
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>adsasdf</h1>
+
+        <nav class="bg-nav_yellow sora border-b-2 border-black lg:border-none">
+            <div class="navbar lg:px-10 px-2">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu grid grid-rows-1 gap-3 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>Find a pet</li>
+                            <li>Breeds</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                    <div class="flex justify-center items-center gap-3">
+
+                        <div>
+                            <img src="images/logo-header.png" alt="">
+                        </div>
+                        <h2 class="text-xl lg:block hidden">Browse <span class="text-yllow">4</span> Pets</h2>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu grid grid-cols-3 gap-2 text-xl menu-horizontal px-1">
+                        <li>Find a pet</li>
+                        <li>Breeds</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="navbar-end lg:flex lg:gap-5 ">
+                    <div class="lg:block hidden">
+                        <i class="fa-regular fa-bell fa-xl"></i>
+                    </div>
+                    <div class="lg:block hidden">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </div>
+                    <div class="lg:block hidden items-center">
+                        <button class="px-4 rounded-md py-2 border border-yllow">Login</button>
+                    </div>
+                    <div class="lg:block hidden">
+                        <button class="px-4 rounded-md py-2 border bg-yllow">Register</button>
+                    </div>
+                </div>
+                <div class="lg:hidden block">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="h-screen">
+            <div class="hero">
+                <div class="hero-content  relative w-full  lg:h-screen   flex-col  lg:flex-row-reverse">
+                    <img  src="images/cat-big.png"
+                        class="bg-none absolute lg:top-0 top-32 w-full rounded-lg " />
+                    <div class="w-full p-2 lg:p-0 absolute lg:top-20 top-1">
+                        <h1 class="lg:text-5xl text-2xl adlam font-bold">Pamper Your Pet, <br> Because They Deserve <br> the Bes
+                        </h1>
+                        <p class="lg:py-6  lg:p-0 py-2 lg:w-1/2 sora text-[#7e7d7d]">
+                            Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
+                            and make tails wag with joy!
+                        </p>
+                        <button class="btn bg-yllow">Find a pet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </header>
 
 
